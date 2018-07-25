@@ -1,0 +1,59 @@
+ext {
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.3",
+            minSdkVersion    : 15,
+            targetSdkVersion : 22,
+            versionCode      : 50108,
+            versionName      : "5.1.8"
+    ]
+
+    version = [
+            androidSupportSdkVersion: "27.0.2",
+            retrofitSdkVersion      : "2.3.0",
+            butterknifeSdkVersion   : "8.8.1",
+            rxlifecycle2SdkVersion  : "2.0.1",
+            canarySdkVersion        : "1.5.1",
+            glideSdkVersion         : "4.5.0",
+            okhttp3Verson           : "3.3.1",
+            kotlin_version          : "1.2.30",
+            anko_version            : "0.10.5"
+    ]
+    dependencies = [
+            "appcompat-v7"                   : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+            "support-v4"                     : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+            "recyclerview-v7"                : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+            "annotations"                    : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
+            "design"                         : 'com.android.support:design:${version["androidSupportSdkVersion"]}',
+            "cardview-v7"                    : 'com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}',
+
+            "constraint"                     : 'com.android.support.constraint:constraint-layout:1.1.2',
+
+            "butterknife"                    : "com.jakewharton:butterknife:${version["butterknifeSdkVersion"]}",
+            "butterknife-compiler"           : "com.jakewharton:butterknife-compiler:${version["butterknifeSdkVersion"]}",
+
+            "okhttp3"                        : "com.squareup.okhttp3:okhttp:${version["okhttp3Verson"]}",
+            "okhttp3-log"                    : "com.squareup.okhttp3:logging-interceptor:${version["okhttp3Verson"]}",
+            "okhttp-urlconnection"           : "com.squareup.okhttp3:okhttp-urlconnection:${version["okhttp3Verson"]}",
+
+            "rxandroid"                      : "io.reactivex.rxjava2:rxjava:2.x.y",
+            "rxjava"                         : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "rxkotlin"                       :"io.reactivex.rxjava2:rxkotlin:2.2.0",
+
+            "kotlin"                         : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${version["kotlin_version"]}",
+            "anko_v7"                        : "org.jetbrains.anko:anko-appcompat-v7-commons:${version["anko_version"]}",
+            "anko_appcompat_v7"              : "org.jetbrains.anko:anko-appcompat-v7:${version["anko_version"]}",
+            "anko-coroutines"                : "org.jetbrains.anko:anko-coroutines:${version["anko_version"]}",
+            "anko-cardview-v7"               : "org.jetbrains.anko:anko-cardview-v7:${version["anko_version"]}",
+            "anko-design"                    : "org.jetrains.anko:anko-design:${version["anko_version"]}",
+            "anko-design-coroutines"         : "org.jetbrains.anko:anko-design-coroutines:${version["anko_version"]}",
+            "anko-gridlayout-v7"             : "org.jetbrains.anko:anko-gridlayout-v7:${version["anko_version"]}",
+            "anko-percent"                   : "org.jetbrains.anko:anko-percent:${version["anko_version"]}",
+            "anko-recyclerview-v7"           : "org.jetbrains.anko:anko-recyclerview-v7:${version["anko_version"]}",
+            "anko-recyclerview-v7-coroutines": "org.jetbrains.anko:anko-recyclerview-v7-coroutines:${version["anko_version"]}",
+            "anko-support-v4-commons"        : "org.jetbrains.anko:anko-support-v4-commons:${version["anko_version"]}",
+            "anko-support-v4"                : "org.jetbrains.anko:anko-support-v4:${version["anko_version"]}",
+            "anko-constraint-layout"         : "org.jetbrains.anko:anko-constraint-layout:${version["anko_version"]}",
+    ]
+}
+
