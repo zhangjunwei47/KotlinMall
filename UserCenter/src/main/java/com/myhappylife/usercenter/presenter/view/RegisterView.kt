@@ -7,4 +7,5 @@ import com.myhappylife.baselibrary.presenter.view.BaseView
  */
 
 interface RegisterView:BaseView{
+    fun onRegisterResult(isOK:Boolean)
 }
