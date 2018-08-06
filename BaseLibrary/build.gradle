@@ -42,4 +42,8 @@ dependencies {
     implementation rootProject.ext.dependencies["anko-recyclerview-v7"]
     implementation rootProject.ext.dependencies["anko-support-v4"]
     implementation rootProject.ext.dependencies["anko-support-v4-commons"]
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

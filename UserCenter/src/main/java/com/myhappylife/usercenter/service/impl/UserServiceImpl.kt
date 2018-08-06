@@ -8,7 +8,12 @@ import io.reactivex.Observable
  */
 
 class UserServiceImpl:UserService {
+    override fun login(moblie: String, password: String): Observable<Boolean> {
+        return Observable.just(true)
+    }
+
     override fun regiser(moblie: String, verifycode: String, pwd: String): Observable<Boolean>{
         return Observable.just(true)
     }
+
 }

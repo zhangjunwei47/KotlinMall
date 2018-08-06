@@ -9,4 +9,5 @@ import io.reactivex.Observable
 
 interface UserService {
     fun regiser(moblie:String, verifycode:String, pwd:String):Observable<Boolean>
+    fun login(moblie: String, password:String):Observable<Boolean>
 }
