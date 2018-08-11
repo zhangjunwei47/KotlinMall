@@ -9,15 +9,12 @@ import com.myhappylife.provider.view.BasePresenter
 
 open class BaseMvpActivity<T:BasePresenter<*>>:BaseActivity(), BaseView{
     override fun hideLoading() {
-        TODO("not implemented")
     }
 
     override fun onError() {
-        TODO("not implemented")
     }
 
     override fun showLoading() {
-        TODO("not implemented")
     }
 
     lateinit var mPresenter:T

@@ -27,12 +27,15 @@ class RetrofitFactory private constructor() {
         //创建okhttp header 拦截器
         interceptor = Interceptor {
             chain ->
-            var request =  chain.request()
-                .newBuilder()
-                .addHeader("Content-Type", "application/json")
-                .addHeader("charset", "utf-8")
-                .build()
-            chain.proceed(request)
+
+                var request =  chain.request()
+                        .newBuilder()
+                        .addHeader("Content-Type", "application/json")
+                        .addHeader("charset", "utf-8")
+                        .build()
+                chain.proceed(request)
+
+
         }
         /**
          * 创建 retrofit 对象
