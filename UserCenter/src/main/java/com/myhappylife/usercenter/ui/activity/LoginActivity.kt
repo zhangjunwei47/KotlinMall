@@ -21,7 +21,7 @@ class LoginActivity : BaseMvpActivity<LoginPresenter>(), LoginView {
         setContentView(R.layout.activity_register)
         mPresenter = LoginPresenter()
         mPresenter.mView = this
-        mRegisterBtn.setOnClickListener { view -> mPresenter.login(mPhoneNumberEdit.text.toString(), mPassCodeEdit.text.toString()) }
+        mRegisterBtn.setOnClickListener {  mPresenter.login(mPhoneNumberEdit.text.toString(), mPassCodeEdit.text.toString()) }
     }
 
 

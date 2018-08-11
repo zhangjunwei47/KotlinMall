@@ -44,6 +44,11 @@ dependencies {
     implementation rootProject.ext.dependencies["anko-recyclerview-v7"]
     implementation rootProject.ext.dependencies["anko-support-v4"]
     implementation rootProject.ext.dependencies["anko-support-v4-commons"]
+    implementation rootProject.ext.dependencies["retrofit"]
+    implementation rootProject.ext.dependencies["retrofit_gson"]
+    implementation rootProject.ext.dependencies["retrofit_rxjava2"]
+    implementation rootProject.ext.dependencies["okhttp3-log"]
+    implementation rootProject.ext.dependencies["okhttp3"]
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {

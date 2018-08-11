@@ -40,6 +40,11 @@ ext {
             "rxjava"                         : "io.reactivex.rxjava2:rxandroid:2.0.1",
             "rxkotlin"                       : "io.reactivex.rxjava2:rxkotlin:2.2.0",
 
+            "retrofit"                       : "com.squareup.retrofit2:retrofit:2.4.0",
+            "retrofit_gson"                  : "com.squareup.retrofit2:converter-gson:2.4.0",
+            "retrofit_rxjava2"               : "com.squareup.retrofit2:adapter-rxjava2:2.2.0",
+
+
             "kotlin"                         : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${version["kotlin_version"]}",
             "anko_v7"                        : "org.jetbrains.anko:anko-appcompat-v7-commons:${version["anko_version"]}",
             "anko_appcompat_v7"              : "org.jetbrains.anko:anko-appcompat-v7:${version["anko_version"]}",
