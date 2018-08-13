@@ -17,7 +17,9 @@ ext {
             glideSdkVersion         : "4.5.0",
             okhttp3Verson           : "3.11.0",
             kotlin_version          : "1.2.30",
-            anko_version            : "0.10.5"
+            anko_version            : "0.10.5",
+            dagger_version          : "2.16",
+            retrofit_version        : "2.4.0"
     ]
     dependencies = [
             "appcompat-v7"                   : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
@@ -44,6 +46,9 @@ ext {
             "retrofit_gson"                  : "com.squareup.retrofit2:converter-gson:2.4.0",
             "retrofit_rxjava2"               : "com.squareup.retrofit2:adapter-rxjava2:2.2.0",
 
+            "dagger_android"                 : "com.google.dagger:dagger-android:${version["dagger_version"]}",
+            "dagger_android_support"         : "com.google.dagger:dagger-android-support:${version["dagger_version"]}",
+            "dagger_android_processor"       : "com.google.dagger:dagger-android-processor:${version["dagger_version"]}",
 
             "kotlin"                         : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${version["kotlin_version"]}",
             "anko_v7"                        : "org.jetbrains.anko:anko-appcompat-v7-commons:${version["anko_version"]}",
