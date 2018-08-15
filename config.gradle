@@ -49,6 +49,7 @@ ext {
             "dagger_android"                 : "com.google.dagger:dagger-android:${version["dagger_version"]}",
             "dagger_android_support"         : "com.google.dagger:dagger-android-support:${version["dagger_version"]}",
             "dagger_android_processor"       : "com.google.dagger:dagger-android-processor:${version["dagger_version"]}",
+            "dagger_compiler"                : "com.google.dagger:dagger-compiler:${version["dagger_version"]}",
 
             "kotlin"                         : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${version["kotlin_version"]}",
             "anko_v7"                        : "org.jetbrains.anko:anko-appcompat-v7-commons:${version["anko_version"]}",
