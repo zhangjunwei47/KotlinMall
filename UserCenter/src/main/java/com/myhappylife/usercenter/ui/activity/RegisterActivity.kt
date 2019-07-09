@@ -8,7 +8,6 @@ import com.myhappylife.usercenter.injection.component.DaggerUserComponent
 import com.myhappylife.usercenter.ui.activity.presenter.view.RegisterPresenter
 import com.myhappylife.usercenter.ui.activity.presenter.view.RegisterView
 import kotlinx.android.synthetic.main.activity_register.*
-import javax.inject.Inject
 
 class RegisterActivity : BaseMvpActivity<RegisterPresenter>(), RegisterView {
 
@@ -28,7 +27,7 @@ class RegisterActivity : BaseMvpActivity<RegisterPresenter>(), RegisterView {
     }
 
     override fun onRegisterResult(isOK: Boolean) {
-        Toast.makeText(this,  "登录成功", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show()
     }
 
 }

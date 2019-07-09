@@ -6,14 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.RegisterActivity">
 
-    <TextView
-        android:id="@+id/phoneNumberText"
+
+    <Button
+        android:id="@+id/mRegisterBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:text="电话号码"
-        app:layout_constraintHorizontal_bias="0.2"
+        android:text="注册"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifyCodeText" />
+
+    <EditText
+        android:id="@+id/mPassCodeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入密码"
+        app:layout_constraintBottom_toBottomOf="@id/passCodeText"
+        app:layout_constraintLeft_toRightOf="@id/passCodeText"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/mVerifyCodeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入验证码"
+        app:layout_constraintBottom_toBottomOf="@id/verifyCodeText"
+        app:layout_constraintLeft_toRightOf="@id/verifyCodeText"
         app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
@@ -23,26 +41,6 @@
         android:hint="输入电话号码"
         app:layout_constraintBottom_toBottomOf="@id/phoneNumberText"
         app:layout_constraintLeft_toRightOf="@id/phoneNumberText"
-        app:layout_constraintRight_toRightOf="parent" />
-
-    <TextView
-        android:id="@+id/passCodeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:text="密码"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/phoneNumberText" />
-
-    <EditText
-        android:id="@+id/mPassCodeEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="输入密码"
-        app:layout_constraintBottom_toBottomOf="@id/passCodeText"
-        app:layout_constraintLeft_toRightOf="@id/passCodeText"
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
@@ -56,22 +54,34 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passCodeText" />
 
-    <EditText
-        android:id="@+id/mVerifyCodeEdit"
+    <TextView
+        android:id="@+id/passCodeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="输入验证码"
-        app:layout_constraintBottom_toBottomOf="@id/verifyCodeText"
-        app:layout_constraintLeft_toRightOf="@id/verifyCodeText"
-        app:layout_constraintRight_toRightOf="parent" />
-
-    <Button
-        android:id="@+id/mRegisterBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="注册"
+        android:paddingTop="30dp"
+        android:text="密码"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/verifyCodeText" />
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberText" />
+
+    <TextView
+        android:id="@+id/phoneNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="电话号码"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.myhappylife.baselibrary.widget.HeadBar
+        style="@style/MatchWrap"
+        app:isShowBack="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rightText="登录"
+        app:titleText="注册"
+        tools:ignore="MissingConstraints" />
+
 
 </android.support.constraint.ConstraintLayout>
