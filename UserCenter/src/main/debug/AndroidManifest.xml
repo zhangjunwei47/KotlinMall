@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myhappylife.usercenter">
-    <uses-permission android:name="android.permission.INTERNET"/>
 
-    <application android:theme="@style/Base.Theme.AppCompat">
+    <application android:theme="@style/AppTheme">
         <activity android:name=".ui.activity.RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -12,5 +11,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
