@@ -15,7 +15,7 @@ class LoginPresenter : BasePresenter<LoginView>() {
     fun login(moblie: String, password: String) {
         var loginService = UserServiceImpl()
         loginService.login(moblie, password).observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.io())
-                .subscribe(object : BaseSubscriber<Boolean>() {
+                .subscribe(object : BaseSubscriber<Boolean>(mView) {
                     override fun onNext(t: Boolean) {
                         super.onNext(t)
                         mView.loginResult(t)
